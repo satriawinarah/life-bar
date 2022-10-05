@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5pt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/barImage"
+        android:layout_width="16pt"
+        android:layout_height="16pt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@mipmap/life_icon"
+        android:scaleType="center"
+        android:layout_margin="5pt" />
+
+    <TextView
+        android:id="@+id/barTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/barImage"
+        android:text="Bar Title"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="5pt"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="100"
+        app:layout_constraintTop_toBottomOf="@id/barTitle"
+        app:layout_constraintLeft_toRightOf="@id/barImage"
+        app:indicatorColor="@color/primary_green"
+        android:layout_marginTop="2pt"
+        android:layout_marginLeft="5pt"
+        android:indeterminate="false"
+        app:trackThickness="15dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
