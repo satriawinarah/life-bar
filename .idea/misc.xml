@@ -11,6 +11,8 @@
         <entry key="app/src/main/res/layout/bar.xml" value="0.2375" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.23854166666666668" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.23854166666666668" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.23854166666666668" />
       </map>
     </option>
   </component>

@@ -26,7 +26,7 @@
         </activity>
         <activity android:name=".AddBarActivity"
             android:exported="true"
-            android:label=""
+            android:label="@string/modify_bar"
             android:theme="@style/Theme.LifeBar.NoActionBar"/>
     </application>
 
