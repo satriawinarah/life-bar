@@ -1,4 +1,4 @@
-package win.satria.lifebar;
+package win.satria.lifebar.activity;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;

@@ -1,4 +1,4 @@
-package win.satria.lifebar;
+package win.satria.lifebar.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import win.satria.lifebar.R;
 import win.satria.lifebar.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {

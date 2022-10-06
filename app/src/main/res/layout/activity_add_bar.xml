@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".AddBarActivity">
+    tools:context=".activity.AddBarActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -41,6 +41,13 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_margin="10pt"
         android:hint="Value"/>
+
+    <Spinner
+        android:id="@+id/spinnerSubtractionType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTextValueBar"
+        android:layout_margin="10pt"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnSave"
