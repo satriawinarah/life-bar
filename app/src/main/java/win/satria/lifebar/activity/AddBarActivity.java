@@ -1,18 +1,13 @@
 package win.satria.lifebar.activity;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
+import win.satria.lifebar.constant.SubtractionType;
 import win.satria.lifebar.databinding.ActivityAddBarBinding;
-import win.satria.lifebar.databinding.ActivityMainBinding;
 
 public class AddBarActivity extends AppCompatActivity {
 
@@ -24,6 +19,12 @@ public class AddBarActivity extends AppCompatActivity {
 
         binding = ActivityAddBarBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        Spinner spinSubtractionType = binding.spinnerSubtractionType;
+        ArrayAdapter<String> spinSubtractionTypeAdapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_spinner_item, SubtractionType.ONE_DAY.getNames());
+        spinSubtractionTypeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinSubtractionType.setAdapter(spinSubtractionTypeAdapter);
 
         setSupportActionBar(binding.toolbar);
     }
