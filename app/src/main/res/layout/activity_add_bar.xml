@@ -42,12 +42,41 @@
         android:layout_margin="10pt"
         android:hint="Value"/>
 
+    <TextView
+        android:id="@+id/tvSubtraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTextValueBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/subtraction"
+        android:layout_margin="10pt"
+        android:layout_marginBottom="3pt"/>
+
     <Spinner
         android:id="@+id/spinnerSubtractionType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/editTextValueBar"
-        android:layout_margin="10pt"/>
+        app:layout_constraintTop_toBottomOf="@id/tvSubtraction"
+        android:layout_margin="10pt"
+        android:layout_marginTop="3pt"/>
+
+    <TextView
+        android:id="@+id/tvAddition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/spinnerSubtractionType"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/addition"
+        android:layout_margin="10pt"
+        android:layout_marginBottom="3pt"/>
+
+    <Spinner
+        android:id="@+id/spinnerAddition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvAddition"
+        android:layout_margin="10pt"
+        android:layout_marginTop="3pt"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnSave"
